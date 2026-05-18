@@ -3,7 +3,6 @@ version: "3.8"
 services:
   baton-bot:
     image: baton-bot:local
-    pull_policy: never
     environment:
       - DISCORD_TOKEN=${DISCORD_TOKEN}
       - TARGET_USER_ID=${TARGET_USER_ID}
