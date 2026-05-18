@@ -3,9 +3,8 @@ version: "3.8"
 services:
   baton-bot:
     image: baton-bot:local
-    environment:
-      - DISCORD_TOKEN=${DISCORD_TOKEN}
-      - TARGET_USER_ID=${TARGET_USER_ID}
+    env_file:
+      - .env
     deploy:
       replicas: 1
       placement:
